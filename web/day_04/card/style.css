@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    /* chiều rộng lớn nhất không vượt qua 100% kích thước thẻ cha */
+    max-width: 100%; 
+}
+
+.card {
+    width: 350px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.15);
+    overflow: hidden;
+}
+
+.card-image {
+    height: 230px;
+}
+
+.card-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h2 {
+    font-size: 19px;
+    color: #464646;
+    font-weight: 400;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #757575;
+    font-weight: 100;
+}
+
+.card-content p span {
+    color: #ffd600;
+}
+
+.type {
+    margin: 20px 0;
+}
+
+.box {
+    width: 600px;
+    height: 300px;
+    background-color: black;
+    color: #fff;
+
+    padding: 30px;
+    border: 20px solid red;
+}
