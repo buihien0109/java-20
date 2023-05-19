@@ -13,6 +13,62 @@ img {
     max-width: 100%; 
 }
 
+ul {
+    list-style-type: none;
+}
+
+/* Header style */
+.header {
+    background-color: #30598c;
+    color: #fff;
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+    height: 62px;
+}
+
+.header-container {
+    padding: 0 30px;
+    height: 100%;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo img {
+    height: 37px;
+    object-fit: cover;
+    width: 100px;
+}
+
+.sidebar {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    margin-left: 24px;
+}
+
+.avatar img {
+    border-radius: 50%;
+    height: 30px;
+    object-fit: cover;
+    width: 30px;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    text-transform: uppercase;
+    margin-right: 24px;
+}
+
+/* Card stype */
 .container {
     width: 1200px;
     margin: auto;
