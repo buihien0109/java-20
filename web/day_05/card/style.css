@@ -59,13 +59,49 @@ ul {
     width: 30px;
 }
 
-.menu ul {
+.menu .main-menu {
     display: flex;
 }
 
-.menu ul li {
+.menu .main-menu .menu-item {
     text-transform: uppercase;
     margin-right: 24px;
+    position: relative;
+
+    height: 62px;
+    display: flex;
+    align-items: center;
+}
+
+.sub-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,.15);
+    background-color: #fff;
+    border-radius: 4px;
+
+    display: none;
+}
+
+.menu .main-menu .menu-item:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu-item {
+    font-size: 15px;
+    cursor: pointer;
+    padding: 16px;
+    text-align: center;
+    text-transform: none;
+    color: #464646;
+}
+
+.sub-menu-item:hover {
+    background-color: #c4c4c4;
+    color: #fff;
 }
 
 /* Card stype */
