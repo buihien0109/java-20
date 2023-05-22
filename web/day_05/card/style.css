@@ -71,6 +71,12 @@ ul {
     height: 62px;
     display: flex;
     align-items: center;
+
+    cursor: pointer;
+}
+
+.menu .main-menu .menu-item:hover {
+    color: #c4c4c4;
 }
 
 .sub-menu {
