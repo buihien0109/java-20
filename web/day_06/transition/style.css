@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    background-color: black;
+
+    /* transition-property: all;
+    transition-duration: 1s; */
+
+    transition: all 0.5s;
+}
+
+.box:hover {
+    width: 500px;
+    height: 400px;
+}
+
+.content {
+    width: 600px;
+    background-color: tomato;
+    padding: 20px;
+
+    margin: auto;
+    overflow: hidden;
+}
+
+.content h2 {
+    position: relative;
+    right: 0;
+    transition: all 1s;
+}
+
+.content:hover h2 {
+    right: 550px;
+}

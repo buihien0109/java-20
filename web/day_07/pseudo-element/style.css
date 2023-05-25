@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn {
+    padding: 20px 60px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+
+    overflow: hidden;
+}
+
+.btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+    position: absolute;
+    top: 0;
+    right: 100%;
+
+    transition: all 0.5s;
+}
+
+.btn:hover::before {
+    right : 0;
+}
+
+.btn span {
+    position: relative;
+    z-index: 10;
+}

@@ -1,0 +1,5 @@
+.owl-carousel div {
+    height: 300px;
+    background-color: tomato;
+    border: 1px solid black;
+}
