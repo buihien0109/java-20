@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Validate.js example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="card mx-5 my-5 px-5 py-5">
+        <h1>Validate.js example</h1>
+        <form id="main" class="form-horizontal" action="/example" method="post" novalidate>
+            <div class="form-group row mb-0">
+                <div class="col-sm-8 md-form px-0">
+                    <label class="control-label" for="name">Full name</label>
+                    <span id="error-name" class="text-danger"></span>
+                    <input id="name" class="form-control" type="text" name="name">
+                </div>
+                <div class="col-sm-4 messages">
+                </div>
+            </div>
+            <div class="form-group row mb-0">
+                <div class="col-sm-8 md-form px-0">
+                    <label for="email" class="control-label">Email</label>
+                    <span id="error-email" class="text-danger"></span>
+                    <input id="email" class="form-control" type="email" name="email">
+                </div>
+                <div class="col-sm-4 messages"></div>
+            </div>
+            <div class="form-group row mb-0">
+                <div class="col-sm-8 md-form px-0">
+                    <label for="password" class="control-label">Password</label>
+                    <span id="error-password" class="text-danger"></span>
+                    <input id="password" class="form-control" type="password" name="password">
+                </div>
+                <div class="col-sm-4 messages"></div>
+            </div>
+            <div class="form-group row mb-0">
+                <div class="col-sm-8 md-form px-0">
+                    <label class="control-label" for="confirm-password">Confirm password</label>
+                    <span id="error-confirm-password" class="text-danger"></span>
+                    <input id="confirm-password" class="form-control" type="password" name="confirm-password">
+                </div>
+                <div class="col-sm-4 messages"></div>
+            </div>
+            <div class="form-group row mb-0">
+                <div class="col-sm-8 md-form px-0">
+                    <label class="control-label" for="phoneNumber">Phone Number</label>
+                    <span id="error-phone" class="text-danger"></span>
+                    <input id="phone" class="form-control" type="text" name="phoneNumber">
+                </div>
+                <div class="col-sm-4 messages">
+                </div>
+            </div>
+            <div class="form-group row mb-0">
+                <div class="col-sm-8 md-form px-0">
+                    <label class="control-label" for="birthday">Birthday</label>
+                    <span id="error-birthday" class="text-danger"></span>
+                    <input id="birthday" class="form-control" type="date" placeholder="YYYY-MM-DD" name="birthday">
+                </div>~
+                <div class="col-sm-4 messages"></div>
+            </div>
+            <div class="form-group">
+                <div class="text-center pt-3">
+                    <button type="submit" class="btn btn-dark">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
