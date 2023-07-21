@@ -10,6 +10,8 @@ CREATE TABLE Customers (
 );
 ```
 
+![](./person.png)
+
 Câu 2 : Truy vấn
 
 ```sql
