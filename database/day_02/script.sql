@@ -153,6 +153,9 @@ where id not in (
 	where salary <= (select avg(salary) from Person)
 );
 
+SELECT country, job, AVG(salary) AS avg_salary
+FROM Person
+GROUP BY country, job;
 
 
 
