@@ -50,6 +50,10 @@ const products = [
     }
 ];
 
+const convertNumberWithCommas = (number) => {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
+
 const productListEl = document.querySelector(".product-list");
 const renderProductList = (products) => {
     let html = '';
@@ -74,7 +78,7 @@ const renderProductList = (products) => {
                         </p>
                     </div>
                     <p class="price text-danger fs-5">
-                        ${product.price} VND
+                        ${convertNumberWithCommas(product.price)} VND
                     </p>
                 </div>
             </div>
