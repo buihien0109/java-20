@@ -75,3 +75,4 @@ Promise.all([doTask1("Nhặt rau"), doTask2("Rửa rau"), doTask3("Luộc rau")]
     .catch((err) => {
         console.log(err);
     });
+
